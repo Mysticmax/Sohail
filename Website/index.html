@@ -5,9 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h2{
+            font-size: 100px;
+            color: yellow;
+            text-shadow: 8px 8px 2px black;
+        }
+    </style>
+    <script>
+
+        function change(){
+            document.getElementById("image").style.height="500px";
+            document.getElementById("image").style.width="500px";
+        }
+        function reform(){
+            document.getElementById("image").style.height="200px";
+            document.getElementById("image").style.width="200px";
+        }
+
+    </script>
 </head>
 <body>
     <h1>Sohail Ustad</h1>
-    <img src="flower.jpg" alt="">
+    <img src="flower.jpg" alt="" id="image">
+    <h2>Rehan</h2>
+    <button onclick="change()">change</button>
+    <button onclick="reform()">reform</button>
+
 </body>
 </html>
